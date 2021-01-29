@@ -29,23 +29,23 @@ public class BasicOperations {
          multiplier = 5;
          dividend = 25 ;
         divider = 5;
-         dividend1 = 35;
-         divider1 = 5;
+         dividend1 = 128;
+         divider1 = 8;
                   
          sum = addend1 + addend2;
           System.out.println("The addition of "  + addend1 + "+" + addend2 + "is equal to --> " + sum);
         
         difference = minuend - subtrahend;
-          System.out.println("The difference of "  + minuend + "+" + subtrahend + "is equal to --> " + difference);
+          System.out.println("The difference of "  + minuend + "-" + subtrahend + "is equal to --> " + difference);
         
         multiply = multiplying * multiplier;
-          System.out.println("The multiply of "  + multiplying + "+" + multiplier + "is equal to --> " + multiply);
+          System.out.println("The multiply of "  + multiplying + "*" + multiplier + "is equal to --> " + multiply);
           
           division = dividend / divider;
-          System.out.println("The division of "  + dividend+ "+" + divider + "is equal to --> " + division);
+          System.out.println("The division of "  + dividend+ "/" + divider + "is equal to --> " + division);
           
           residue = dividend1 % divider1;
-          System.out.println("The residue of "  + dividend1+ "+" + divider1 + "is equal to --> " + residue);
+          System.out.println("The residue of "  + dividend1+ "%" + divider1 + "is equal to --> " + residue);
           
     }
     
