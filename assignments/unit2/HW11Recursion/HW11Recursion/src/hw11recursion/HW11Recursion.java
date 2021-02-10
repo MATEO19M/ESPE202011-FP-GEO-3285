@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HW11Recursion {
 
     public static void main(String[] args) {
-        int number = 6;
+        int number = 0;
         int fact = 0;
         fact = factorial(number);
         System.out.println("factorial of " + number + " is equal to -> " + fact);
