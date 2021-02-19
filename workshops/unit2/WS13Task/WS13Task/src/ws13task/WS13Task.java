@@ -11,7 +11,7 @@ public class WS13Task {
         double acceleration;
         double mass;
         double force;
-        double vini;
+        double vo1;
         double ang;
         double total;
 
@@ -32,35 +32,35 @@ public class WS13Task {
             opcion = read.nextInt();
             switch (opcion) {
                 case 1:
-                    System.out.println(" Enter the perimeter");
-                    int perimetro = read.nextInt();
+                    System.out.println("Enter the perimeter");
+                    float perimeter = read.nextInt();
                     System.out.println("Enter the Apothem");
-                    int apotema = read.nextInt();
-                    System.out.println(" THE PENTAGON AREA IS :" + computeThePentagonArea(perimetro, apotema));
+                    float apothem = read.nextInt();
+                    System.out.println(" THE PENTAGON AREA IS :" + computeThePentagonArea(perimeter, apothem));
                     break;
                 case 2:
                     System.out.println("Enter base");
-                    int base_r = read.nextInt();
+                    int base = read.nextInt();
                     System.out.println("Enter Height");
-                    int altura_r = read.nextInt();
-                    System.out.println(" THE ROMBOID AREA IS :" + computeTheRhomboidArea(base_r, altura_r));
+                    int height = read.nextInt();
+                    System.out.println(" THE ROMBOID AREA IS :" + computeTheRhomboidArea(base, height));
                     break;
                 case 3:
                     System.out.println("ENTER MAJOR BASE");
                     int base_ma = read.nextInt();
                     System.out.println("ENTER THE MINOR BASE");
-                    int base_me = read.nextInt();
+                    int base_mi = read.nextInt();
                     System.out.println("Enter Height");
-                    int altura_t = read.nextInt();
-                    System.out.println(" THE AREA OF THE TRAPEZE IS :" + computeTheTrapezeArea(base_ma, base_me, altura_t));
+                    int height1 = read.nextInt();
+                    System.out.println(" THE AREA OF THE TRAPEZE IS :" + computeTheTrapezeArea(base_ma, base_mi, height1));
                     break;
                 case 4:
                     System.out.println("Calculate Maximum Hight");
                     System.out.println("Enter Initial Speed: ");
-                    vini = read.nextFloat();
+                    vo1 = read.nextFloat();
                     System.out.println("Enter the Angle: ");
                     ang = read.nextDouble();
-                    total = (Math.pow((vini * Math.sin(ang)), 2)) / (2 * 9.8);
+                    total = (Math.pow((vo1 * Math.sin(ang)), 2)) / (2 * 9.8);
                     System.out.println("The Maximum Height is :" + total + "Mts");
                     System.out.println();
                     break;
@@ -75,12 +75,12 @@ public class WS13Task {
                     double a = read.nextDouble();
                     double result = ((vo * t) + (a / 2) * (t * t));
                     System.out.println(" ");
-                    System.out.println("****************** Answer ********************");
+                    System.out.println("----- Answer ----");
                     System.out.println("x = " + vo + "*" + t + " + 1/2 *" + a + " * " + t + "^2");
                     System.out.println("x = " + result);
                     break;
                 case 6:
-                    System.out.println(" Calculate Acceleration");
+                    System.out.println("Calculate Acceleration");
                     System.out.println("Enter Force");
                     force = read.nextFloat();
                     System.out.println("Enter Mass");
@@ -103,8 +103,8 @@ public class WS13Task {
 
     }
 
-    public static int computeThePentagonArea(int p, int a) {
-        return (p * a) / 2;
+    public static int computeThePentagonArea(float p, float a) {
+        return (int) ((float)(p * a) / 2);
     }
 
     public static int computeTheTrapezeArea(int B, int b, int h) {
