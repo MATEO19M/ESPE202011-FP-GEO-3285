@@ -41,6 +41,7 @@ public class WS16MatrixAddition {
             for (int j = 0; j < 3; j++) {
                 System.out.print("\t " + c[i][j]);
             }
+            System.out.println("");
         }
 
     }
