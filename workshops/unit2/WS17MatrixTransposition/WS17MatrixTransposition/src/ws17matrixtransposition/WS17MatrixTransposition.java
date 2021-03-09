@@ -11,6 +11,7 @@ public class WS17MatrixTransposition {
         float[][] c;
         int m = 0;
         int n = 0;
+        System.out.println("Author:Mateo Martinez");
 
         Scanner input = new Scanner(System.in);
 
