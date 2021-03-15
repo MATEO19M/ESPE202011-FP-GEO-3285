@@ -1,0 +1,55 @@
+package ws24sorting;
+
+public class WS24Sorting {
+
+    public static void main(String[] args) {
+        int[] integersToSort = {9, 7, 1, 6, 2, 3};
+
+        System.out.println("Unsorted integers");
+        printArray(integersToSort);
+        sortByBubbleSort(integersToSort);
+        System.out.println("");
+        printArray(integersToSort);
+
+        int[] integersToSort2 = {8, 1, 7, 2, 5};
+
+        System.out.println("Unsorted integers");
+        printArray(integersToSort2);
+        sortByBubbleSort(integersToSort2);
+        System.out.println("");
+        printArray(integersToSort2);
+
+    }
+
+    public static void sortByBubbleSort(int integers[]) {
+
+        int n = integers.length;
+        int temp;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (integers[j] > integers[j + 1]) {
+
+                    temp = integers[j];
+                    integers[j] = integers[j + 1];
+                    integers[j + 1] = temp;
+
+                }
+                System.out.print("sorting --> ");
+                printArray(integers);
+
+            }
+            System.out.println("");
+
+        }
+
+    }
+
+    public static void printArray(int[] integers) {
+        int n = integers.length;
+        for (int i = 0; i < n; i++) {
+            System.out.print(integers[i] + " , ");
+        }
+        System.out.println("");
+    }
+
+}
