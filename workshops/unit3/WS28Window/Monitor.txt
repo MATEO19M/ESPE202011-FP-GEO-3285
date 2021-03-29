@@ -1,0 +1,4 @@
+Hdmi 2.0,2,110v,60,HD,MAC
+Hdmi 3.0,3,220v,90,FHD+,Windows
+Type c,6,220v,120,4k,MAC
+Type c,6,220v,90,8k,Windows
